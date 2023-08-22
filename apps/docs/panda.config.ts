@@ -19,7 +19,7 @@ export default defineConfig({
     // touching this config will trigger a refresh and config:change is triggered
     // but still the style is not updated until storybook reload
     // "../../packages/preset/src/**/*.ts*",
-    // "./src/**/*.{js,jsx,ts,tsx}",
+    "./src/**/*.{js,jsx,ts,tsx}",
   ],
 
   // Files to exclude
