@@ -10,7 +10,10 @@
     "prepare": "panda codegen",
     "lint": "eslint \"src/**/*.ts*\"",
     "clean": "rimraf .turbo node_modules",
-    "generate:component": "turbo gen react-component"
+    "generate:component": "turbo gen react-component",
+    "build": "tsup src/index.tsx --dts --format=esm,cjs --clean --dts --external @pandacss/dev --external @turbopandarepo/ds",
+    "ship": "panda ship src/**/*.{tsx,ts} --outfile dist/panda.buildinfo.json",
+    "build-ship": "pnpm compile && pnpm ship"
   },
   "dependencies": {
     "@pandacss/preset-panda": "^0.6.0",

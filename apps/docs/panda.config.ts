@@ -11,15 +11,15 @@ export default defineConfig({
   // Where to look for your css declarations
   include: [
     "./node_modules/@turbopandarepo/ds/src/**/*.ts*",
-    "./node_modules/@turbopandarepo/ui/src/**/*.ts*",
+    "./node_modules/@turbopandarepo/ui/dist/panda.buildinfo.json",
     // "./node_modules/@turbopandarepo/preset/src/**/*.ts*",
     // using this instead of the above will trigger a refresh when the preset is changed
     // but config:change is not triggered
     //
     // touching this config will trigger a refresh and config:change is triggered
     // but still the style is not updated until storybook reload
-    "../../packages/preset/src/**/*.ts*",
-    "./src/**/*.{js,jsx,ts,tsx}",
+    // "../../packages/preset/src/**/*.ts*",
+    // "./src/**/*.{js,jsx,ts,tsx}",
   ],
 
   // Files to exclude
